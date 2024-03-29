@@ -9,6 +9,7 @@ const orderTotal = document.querySelector("#order-total");
 const menuSection = document.querySelector("#menu");
 const clearOrderButton = document.querySelector( "#clear-order" );
 
+// Display the menu items
 function displayMenuItems(menu) {
 
     for (const [category, items] of Object.entries(menu)) {
@@ -32,6 +33,7 @@ function displayMenuItems(menu) {
     };
 }     
 
+// Add an item to the order
 function addToOrder(itemName) {
 
     const listItem = document.createElement("li");
@@ -44,9 +46,9 @@ function addToOrder(itemName) {
     orderTotal.textContent = newTotal.toFixed(2);
 
     listItem.onclick = () => removeOrderedItem(listItem);
-    clearOrderButton.onclick = () => clearOrder();  
 }
 
+// Remove an item from the order
 function removeOrderedItem(listItem) {
     orderItemsList.removeChild(listItem);   
 
@@ -56,6 +58,7 @@ function removeOrderedItem(listItem) {
     orderTotal.textContent = newTotal.toFixed(2);
 }
 
+// Clear the order function that remove all list items from the order
 const clearOrder = () => {
     while (orderItemsList.firstChild){
         orderItemsList.removeChild(orderItemsList.firstChild);
@@ -65,10 +68,13 @@ const clearOrder = () => {
     orderTotal.textContent = newTotal.toFixed(2);
 }
 
-
+// Initialize the menu system
 function initMenuSystem() {
     displayMenuItems(menu);
 
 }
 
 initMenuSystem();
+
+// Add a click event handler for the clear order button
+clearOrderButton.onclick = () => clearOrder(); 
