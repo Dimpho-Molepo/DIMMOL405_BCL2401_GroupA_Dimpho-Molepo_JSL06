@@ -4,7 +4,8 @@
 
 This project involves building an interactive web application using JavaScript to display menu items for a fictional UberEats restaurant called "CodeCuisine." The goal is to create a simple and visually engaging menu display system that allows users to add items to their order with ease. The main objective is create and use functions to dynamically populate the menu items on the page, implement a callback function to handle adding items to the order, use closures to maintain the state of the order, utilize function expressions and anonymous functions and call built-in functions and create custom functions to manage the menu and order system.
 
-![JSL05_solution](https://github.com/Dimpho-Molepo/DIMMOL405_BCL2401_GroupA_Dimpho-Molepo_JSL06/assets/136012291/2fa4aa97-9e67-4864-a359-d06a6fdf626a)
+![JSL06-solution](https://github.com/Dimpho-Molepo/DIMMOL405_BCL2401_GroupA_Dimpho-Molepo_JSL06/assets/136012291/e9925c8d-a49e-4ab0-a3a9-8a20c0f63f0f)
+
 
 ## Getting Started 
 
